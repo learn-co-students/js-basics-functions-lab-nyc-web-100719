@@ -1,8 +1,8 @@
 // Code your solution in this file!
 function distanceFromHqInBlocks(input){
-let hq = 42;
-let distanceBlocksApart = Math.abs(input - hq);
-return distanceBlocksApart;
+    let hq = 42;
+    let distanceBlocksApart = Math.abs(input - hq);
+    return distanceBlocksApart;
 }
 
 function distanceFromHqInFeet(number){
@@ -13,13 +13,13 @@ function distanceFromHqInFeet(number){
 }
 
 function distanceTravelledInFeet(start, finish){
-let resultInBlocks = Math.abs(start - finish);
-let resultInFeet = resultInBlocks * 264;
-return resultInBlocks, resultInFeet
+    let resultInBlocks = Math.abs(start - finish);
+    let resultInFeet = resultInBlocks * 264;
+    return resultInBlocks, resultInFeet
 }
 
 function calculatesFarePrice(start, destination){
-const totalFeet = distanceTravelledInFeet(start, destination)
+    const totalFeet = distanceTravelledInFeet(start, destination)
     if(totalFeet < 400){
         return 0;
     } else if (totalFeet > 400 && totalFeet < 2000){
